@@ -40,4 +40,11 @@ def gimmeinfo(seq):
             s += 3
     for i in range(0, len(codonseq),3):
         lijst.append(codonseq[i:i+3])
+<<<<<<< HEAD
 main()
+=======
+
+
+    
+main()
+>>>>>>> origin/master

@@ -4,10 +4,12 @@
 ###############################################################################
 
 file = open ("m_p53.gb", mode='r')
+lijst = []
 
 def main():
     x = startread(file)
     gimmeinfo(x)
+    print (lijst)
     
 def startread(seq):
     raw_data = ""
@@ -36,5 +38,9 @@ def gimmeinfo(seq):
             break
         else:
             s += 3
-    print (codonseq)
+    for i in range(0, len(codonseq),3):
+        lijst.append(codonseq[i:i+3])
+
+
+    
 main()
